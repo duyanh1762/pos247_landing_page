@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rova Solution</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/images/logo_pos_247.jpg"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/assets/font-awesome/css/all.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="/images/logo_pos_247.jpg" alt="Logo" />
+          POS<span class="logo-title">247</span>
+        </div>
+
+        <!-- Menu items -->
+        <nav class="nav-menu">
+          <a href="#introduce">Giới thiệu</a>
+          <a href="#subscribe">Đăng ký</a>
+          <a href="#function">Chức năng</a>
+          <a href="#help">Hướng dẫn</a>
+          <a href="#contact">Hỗ trợ</a>
+        </nav>
+        <!-- Icon menu (mobile) -->
+        <div class="menu-toggle" id="menuToggle">☰</div>
+      </div>
+    </div>
+    <section class="hero">
+      <canvas id="particle-bg"></canvas>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>POS<span class="logo-title">247</span></h1>
+        <h3>
+          GIẢI PHÁP QUẢN LÝ CỬA HÀNG <span class="nowrap">TOÀN DIỆN</span>
+        </h3>
+        <div class="benefit">
+          <div class="row">
+            <div class="icon"><i class="fa-solid fa-square-check"></i></div>
+            <div class="line">Sử dụng được trên mọi thiết bị.</div>
+          </div>
+          <div class="row">
+            <div class="icon"><i class="fa-solid fa-square-check"></i></div>
+            <div class="line">Giao diện thân thiện, dễ sử dụng.</div>
+          </div>
+          <div class="row">
+            <div class="icon"><i class="fa-solid fa-square-check"></i></div>
+            <div class="line">Ngăn chặn mọi thất thoát, gian lận.</div>
+          </div>
+          <div class="row">
+            <div class="icon"><i class="fa-solid fa-square-check"></i></div>
+            <div class="line">Quản lý doanh số dễ dàng.</div>
+          </div>
+        </div>
+        <!-- <ul>
+          <li>
+            <i class="fa-solid fa-square-check"></i>
+            Sử dụng được trên mọi thiết bị
+          </li>
+          <li>
+            <i class="fa-solid fa-square-check"></i>
+            Giao diện thân thiện, dễ sử dụng.
+          </li>
+          <li>
+            <i class="fa-solid fa-square-check"></i>
+            Quản lý đơn hàng, doanh thu dễ dàng.
+          </li>
+          <li>
+            <i class="fa-solid fa-square-check"></i>
+            Ngăn chặn mọi thất thoát, gian lận.
+          </li>
+        </ul> -->
+        <div class="btn-action">
+          <button style="animation: swipeFromLeft 1s ease">
+            Dùng thử <i class="fa-solid fa-circle-caret-right"></i>
+          </button>
+          <button style="animation: swipeFromRight 1s ease">
+            Hướng dẫn <i class="fa-solid fa-circle-caret-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section features" id="introduce">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2>
+              <span style="color: grey">POS</span
+              ><span class="logo-title">247</span> - Giải pháp quản lý cửa hàng
+              hiện đại và <span class="nowrap">tiết kiệm</span>
+            </h2>
+            <div class="image-mobile">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/images/staff6.jpg" alt="Ảnh 1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/staff2.jpg" alt="Ảnh 2" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/staff4.jpg" alt="Ảnh 3" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/staff5.jpg" alt="Ảnh 4" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="paragraph">
+              Trong thời đại mà tốc độ, hiệu quả và chi phí là những yếu tố sống
+              còn, việc vận hành một <span class="nowrap">cửa hàng</span> không
+              chỉ cần sự chăm chỉ mà còn cần một công cụ thông minh để hỗ trợ.
+            </div>
+            <div class="paragraph">
+              POS<span class="logo-title">247</span> ra đời để giúp chủ quán như
+              bạn tiết kiệm thời gian, cắt giảm chi phí đầu tư, và quản lý cửa
+              hàng một cách dễ dàng, minh bạch và chuyên nghiệp.
+            </div>
+            <button>Đăng ký dùng thử</button>
+          </div>
+          <div class="image">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/images/staff6.jpg" alt="Ảnh 1" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/staff2.jpg" alt="Ảnh 2" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/staff4.jpg" alt="Ảnh 3" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/staff5.jpg" alt="Ảnh 4" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section features">
+      <div class="container">
+        <div class="content reverse">
+          <div class="image">
+            <img
+              src="/images/atom_features_order.png"
+              alt="Ảnh quản lý order đến chế biến"
+            />
+          </div>
+          <div class="text">
+            <h2>
+              <i class="fa-solid fa-clock-rotate-left"></i> Vận hành đơn giản –
+              Không cần hạ tầng phức tạp
+            </h2>
+            <div class="image-mobile">
+              <img
+                src="/images/atom_features_order.png"
+                alt="Ảnh quản lý order đến chế biến"
+              />
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Không còn cảnh phải lắp đặt mạng nội bộ rườm rà, đầu tư thiết bị
+                cồng kềnh hay thuê kỹ thuật viên set-up hệ thống.
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Tối đa hiệu năng sử dụng thiết bị sẵn có</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Tiết kiệm chi phí đầu tư ban đầu</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Tối thiểu thời gian đào tạo – ai cũng có thể sử dụng ngay từ lần
+                đầu
+              </div>
+            </div>
+            <button>Đăng ký dùng thử</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section analytics">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2>
+              <i class="fa-solid fa-tablet-screen-button"></i> Giao diện thân
+              thiện – Thiết kế tối giản – Dễ dùng
+            </h2>
+            <div class="image-mobile">
+              <img src="/images/atom_report.png" alt="Ảnh biểu đồ báo cáo" />
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Sơ đồ bàn trực quan giúp nhân viên thao tác nhanh chóng, theo
+                dõi trạng thái phục vụ từng bàn
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Tạo món chỉ với 1 chạm hoặc order bằng giọng nói – hệ thống tự
+                động gửi đơn đến bar/bếp
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Mọi thao tác đều được tối ưu hóa để đảm bảo: 👉 NHANH – GỌN –
+                CHÍNH XÁC
+              </div>
+            </div>
+            <button>Đăng ký dùng thử</button>
+          </div>
+          <div class="image">
+            <img src="/images/atom_report.png" alt="Ảnh biểu đồ báo cáo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section features">
+      <div class="container">
+        <div class="content reverse">
+          <div class="image">
+            <img
+              src="/images/atom_multi_device_edit _2.png"
+              alt="Ảnh quản lý order đến chế biến"
+            />
+          </div>
+          <div class="text">
+            <h2>
+              <i class="fa-solid fa-sack-dollar"></i> Quản lý dòng tiền minh
+              bạch – Chốt ca dễ dàng
+            </h2>
+            <div class="image-mobile">
+              <img
+                src="/images/atom_multi_device_edit _2.png"
+                alt="Ảnh quản lý order đến chế biến"
+              />
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Phân ca – chốt ca linh hoạt, lọc kênh thanh toán rõ ràng
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                So sánh doanh thu giữa các kỳ, phân tích tỷ lệ món bán chạy để
+                tối ưu menu
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Theo dõi tình trạng hoạt động, quản lý 1 hay nhiều cửa hàng từ
+                một nền tảng duy nhất
+              </div>
+            </div>
+            <button>Đăng ký dùng thử</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section analytics">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2>
+              <i class="fa-solid fa-box-open-full"></i> Quản lý hàng hoá chi
+              tiết – Báo cáo đầy đủ
+            </h2>
+            <div class="image-mobile">
+              <img src="/images/atom_report.png" alt="Ảnh biểu đồ báo cáo" />
+            </div>
+            <!-- <div class="paragraph">
+              Không chỉ quản lý bán hàng, POS<span class="logo-title">247</span>
+              còn giúp bạn kiểm soát hàng hoá một cách chính xác:
+            </div> -->
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Báo cáo xuất – nhập – tồn kho theo ngày, theo đối tác
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Hỗ trợ xuất báo cáo chi tiết ra Excel để phục vụ kiểm toán, phân
+                tích hoặc lưu trữ
+              </div>
+            </div>
+            <button>Đăng ký dùng thử</button>
+          </div>
+          <div class="image">
+            <img src="/images/atom_report.png" alt="Ảnh biểu đồ báo cáo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section analytics" id="function">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2>
+              <i class="fa-solid fa-rocket-launch"></i>
+              Chức năng phần mềm
+            </h2>
+            <!-- <div class="paragraph">
+              POS<span class="logo-title">247</span> cung cấp cho người dùng các
+              chức năng sau:
+            </div> -->
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Tự động hóa quy trình bán hàng khép kín: Order - Chế biến -
+                Thanh toán
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Quản lý, bán hàng từ xa trên nhiều thiết bị
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Hệ thống báo cáo thông minh và toàn diện</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Dễ dàng thiết kế phòng bàn, quản lý danh sách hàng hóa
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Xây dựng chương trình khuyến mãi, voucher, tích điểm
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Tương thích, đồng bộ trên tất cả các thiết bị
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Quản lý sản xuất, định lượng nguyên vật liệu
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Kết nối Hóa đơn điện tử khởi tạo từ máy tính tiền
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Quản lý Thu/Chi, phân tích kinh doanh</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Quy trình Order tại bàn tối ưu vận hành</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Quy trình xuất - nhập - tồn hàng hóa đơn giản, chính xác
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Hỗ trợ xuất báo cáo chi tiết ra Excel để phục vụ kiểm toán, phân
+                tích hoặc lưu trữ
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Không giới hạn tính năng, cập nhật liên tục
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Quản lý Nhân viên chặt chẽ</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Quản lý Lô - Hạn sử dụng đa dạng hàng hóa</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Đa dạng hình thức thanh toán</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Không giới hạn phân quyền</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Hệ thống thông tin khách hàng, nhà cung cấp, công nợ
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Hệ thống API mở, dễ dàng kết nối</div>
+            </div>
+            <div class="btn-sub">
+              <button>Đăng ký dùng thử</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section pricing" id="subscribe">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2><i class="fa-solid fa-hand-holding-dollar"></i> Bảng Giá</h2>
+            <div class="pricing-container">
+              <!-- Basic -->
+              <div class="pricing-card">
+                <h3>Gói dùng thử</h3>
+                <p class="price">0đ</p>
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> 2 tuần trải
+                    nghiệm full chức năng
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Không ràng buộc,
+                    không phát sinh chi phí
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Hỗ trợ kỹ thuật
+                    24/7 trong suốt quá trình dùng thử
+                  </li>
+                </ul>
+                <a href="#" class="btn">Đăng ký</a>
+              </div>
+
+              <!-- Standard -->
+              <div class="pricing-card">
+                <h3>Gói 6 Tháng</h3>
+                <p class="price">399.000đ</p>
+                <ul>
+                  <li class="sale">
+                    <i class="fa-solid fa-fire-flame"></i> Ưu đãi đặc biệt: Tặng
+                    thêm 1 tháng sử dụng miễn phí
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Tổng thời gian sử
+                    dụng: 7 tháng
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Tiết kiệm ngay:
+                    ~14% so với thanh toán từng tháng
+                  </li>
+                </ul>
+                <a href="#" class="btn">Đăng ký</a>
+              </div>
+
+              <!-- Premium -->
+              <div class="pricing-card">
+                <h3>Gói 12 Tháng</h3>
+                <p class="price">999.000đ</p>
+                <ul>
+                  <li class="sale">
+                    <i class="fa-solid fa-fire-flame"></i> Ưu đãi đặc biệt: Tặng
+                    thêm 3 tháng sử dụng miễn phí
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Tổng thời gian sử
+                    dụng: 15 tháng
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Tiết kiệm ngay:
+                    ~20% so với thanh toán từng tháng
+                  </li>
+                </ul>
+                <a href="#" class="btn">Đăng ký</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2><i class="fa-solid fa-headset"></i> Kênh hỗ trợ</h2>
+            <div class="contact-container">
+              <!-- Facebook -->
+              <div class="contact-card">
+                <i class="fa-brands fa-facebook fa-3x"></i>
+                <h3>Facebook</h3>
+                <p>Kết nối với chúng tôi qua Fanpage</p>
+                <a
+                  href="https://facebook.com/yourpage"
+                  target="_blank"
+                  class="btn"
+                  >Liên hệ</a
+                >
+              </div>
+
+              <!-- Zalo -->
+              <div class="contact-card">
+                <i class="fa-brands fa-whatsapp fa-3x"></i>
+                <!-- thay icon zalo tùy font -->
+                <h3>Zalo</h3>
+                <p>Chat trực tiếp qua Zalo</p>
+                <a href="https://zalo.me/0778288010" target="_blank" class="btn"
+                  >Liên hệ</a
+                >
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-card">
+                <i class="fa-solid fa-phone fa-3x"></i>
+                <h3>Hotline</h3>
+                <p>Gọi ngay để được hỗ trợ nhanh chóng</p>
+                <a href="tel:0123456789" class="btn">Gọi ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-column">
+          <div class="infor-company">
+            <img class="logo" src="/images/logo_pos_247.jpg" />
+            <h3>POS<span class="logo-title">247</span></h3>
+          </div>
+          <p>
+            Giải pháp toàn diện giúp bạn vận hành nhà hàng hiệu quả, tiết kiệm
+            chi phí và tăng doanh thu.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Liên hệ</h4>
+          <ul>
+            <li>📞 077 220 9215</li>
+            <li>📧 duyanh1762@gmail.com</li>
+            <li>📍 123 Đường ABC, Quận 1, TP.HCM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 POS247. Đã đăng ký bản quyền.</p>
+      </div>
+    </footer>
+    <div class="popup-zalo">
+      <a href="https://zalo.me/0778288010" target="_blank" class="btn">
+        <img src="/images//zalo_icon.png" >
+      </a>
+    </div>
+    <div class="popup-phone">
+      <a href="tel:0772209215"><i class="fa-solid fa-phone-volume"></i></a>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        576: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+      },
+    });
+    const canvas = document.getElementById("particle-bg");
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.outerHeight;
+
+    let particles = [];
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 3 + 1;
+        this.speedX = (Math.random() - 0.5) * 0.5;
+        this.speedY = (Math.random() - 0.5) * 0.5;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+
+        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+      }
+      draw() {
+        ctx.fillStyle = "rgba(255,255,255,0.8)";
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    function init() {
+      particles = [];
+      for (let i = 0; i < window.innerWidth / 10; i++) {
+        particles.push(new Particle());
+      }
+    }
+
+    function connect() {
+      for (let a = 0; a < particles.length; a++) {
+        for (let b = a; b < particles.length; b++) {
+          let dx = particles[a].x - particles[b].x;
+          let dy = particles[a].y - particles[b].y;
+          let distance = Math.sqrt(dx * dx + dy * dy);
+          if (distance < 120) {
+            ctx.strokeStyle = "rgba(255,255,255,0.2)";
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particles[a].x, particles[a].y);
+            ctx.lineTo(particles[b].x, particles[b].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "rgba(15,43,70,0.3)"; // nền mờ giữ hiệu ứng
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      particles.forEach((p) => {
+        p.update();
+        p.draw();
+      });
+      connect();
+      requestAnimationFrame(animate);
+    }
+
+    init();
+    animate();
+
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      init();
+    });
+
+    const navbar = document.getElementsByClassName("navbar")[0];
+    const popupZalo = document.getElementsByClassName("popup-zalo")[0];
+    const popupPhone = document.getElementsByClassName("popup-phone")[0];
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= window.innerHeight) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+
+      if(window.scrollY >= 2*window.innerHeight){
+        popupPhone.classList.add("show-popup");
+        popupZalo.classList.add("show-popup");
+      }
+    });
+
+    document.querySelectorAll(".nav-menu a").forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault(); // chặn hành vi mặc định nhảy ngay lập tức
+        const targetId = this.getAttribute("href").substring(1); // bỏ dấu #
+        const targetSection = document.getElementById(targetId);
+        navMenu.classList.remove("show");
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: "smooth", // cuộn mượt
+          });
+        }
+      });
+    });
+  </script>
+</html>
