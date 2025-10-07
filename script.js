@@ -1,6 +1,14 @@
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.querySelector(".nav-menu");
 
+function goApp(){
+  window.open('https://fnb.pos247.app', '_blank');
+}
+
+function goTutorial(){
+  window.open('https://pos247.app/docs/index.html', '_blank');
+}
+
 menuToggle.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 });
@@ -132,7 +140,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-document.querySelectorAll(".nav-menu a").forEach((link) => {
+document.querySelectorAll(".nav-menu .smooth").forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault(); // chặn hành vi mặc định nhảy ngay lập tức
     const targetId = this.getAttribute("href").substring(1); // bỏ dấu #

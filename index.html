@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rova Solution</title>
+    <title>Phần mềm bán hàng POS247</title>
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -27,11 +27,11 @@
 
         <!-- Menu items -->
         <nav class="nav-menu">
-          <a href="#introduce">Giới thiệu</a>
-          <a href="#subscribe">Đăng ký</a>
-          <a href="#function">Chức năng</a>
-          <a href="#help">Hướng dẫn</a>
-          <a href="#contact">Hỗ trợ</a>
+          <a class="smooth" href="#introduce">Giới thiệu</a>
+          <a class="smooth" href="#subscribe">Đăng ký</a>
+          <a class="smooth" href="#function">Chức năng</a>
+          <a href="https://pos247.app/docs/index.html" target="_blank">Hướng dẫn</a>
+          <a class="smooth" href="#contact">Hỗ trợ</a>
         </nav>
         <!-- Icon menu (mobile) -->
         <div class="menu-toggle" id="menuToggle">☰</div>
@@ -82,10 +82,10 @@
           </li>
         </ul> -->
         <div class="btn-action">
-          <button style="animation: swipeFromLeft 1s ease">
+          <button style="animation: swipeFromLeft 1s ease" onclick="goApp()">
             Dùng thử <i class="fa-solid fa-circle-caret-right"></i>
           </button>
-          <button style="animation: swipeFromRight 1s ease">
+          <button style="animation: swipeFromRight 1s ease" onclick="goTutorial()">
             Hướng dẫn <i class="fa-solid fa-circle-caret-right"></i>
           </button>
         </div>
@@ -129,7 +129,7 @@
               bạn tiết kiệm thời gian, cắt giảm chi phí đầu tư, và quản lý cửa
               hàng một cách dễ dàng, minh bạch và chuyên nghiệp.
             </div>
-            <button>Đăng ký dùng thử</button>
+            <button onclick="goApp()">Đăng ký dùng thử</button>
           </div>
           <div class="image">
             <div class="swiper mySwiper">
@@ -160,7 +160,7 @@
         <div class="content reverse">
           <div class="image">
             <img
-              src="/images/atom_features_order.png"
+              src="/images/multidevices.png"
               alt="Ảnh quản lý order đến chế biến"
             />
           </div>
@@ -171,7 +171,7 @@
             </h2>
             <div class="image-mobile">
               <img
-                src="/images/atom_features_order.png"
+                src="/images/multidevices.png"
                 alt="Ảnh quản lý order đến chế biến"
               />
             </div>
@@ -205,7 +205,7 @@
                 đầu
               </div>
             </div>
-            <button>Đăng ký dùng thử</button>
+             <button onclick="goApp()">Đăng ký dùng thử</button>
           </div>
         </div>
       </div>
@@ -219,7 +219,7 @@
               thiện – Thiết kế tối giản – Dễ dùng
             </h2>
             <div class="image-mobile">
-              <img src="/images/atom_report.png" alt="Ảnh biểu đồ báo cáo" />
+              <img src="/images/workspaces.png" alt="Ảnh biểu đồ báo cáo" />
             </div>
             <div class="row">
               <div class="icon">
@@ -248,10 +248,10 @@
                 CHÍNH XÁC
               </div>
             </div>
-            <button>Đăng ký dùng thử</button>
+             <button onclick="goApp()">Đăng ký dùng thử</button>
           </div>
           <div class="image">
-            <img src="/images/atom_report.png" alt="Ảnh biểu đồ báo cáo" />
+            <img src="/images/workspaces.png" alt="Ảnh biểu đồ báo cáo" />
           </div>
         </div>
       </div>
@@ -261,7 +261,7 @@
         <div class="content reverse">
           <div class="image">
             <img
-              src="/images/atom_multi_device_edit _2.png"
+              src="/images/activities.png"
               alt="Ảnh quản lý order đến chế biến"
             />
           </div>
@@ -272,7 +272,7 @@
             </h2>
             <div class="image-mobile">
               <img
-                src="/images/atom_multi_device_edit _2.png"
+                src="/images/activities.png"
                 alt="Ảnh quản lý order đến chế biến"
               />
             </div>
@@ -302,7 +302,7 @@
                 một nền tảng duy nhất
               </div>
             </div>
-            <button>Đăng ký dùng thử</button>
+             <button onclick="goApp()">Đăng ký dùng thử</button>
           </div>
         </div>
       </div>
@@ -316,7 +316,7 @@
               tiết – Báo cáo đầy đủ
             </h2>
             <div class="image-mobile">
-              <img src="/images/atom_report.png" alt="Ảnh biểu đồ báo cáo" />
+              <img src="/images/goods.png" alt="Ảnh biểu đồ báo cáo" />
             </div>
             <!-- <div class="paragraph">
               Không chỉ quản lý bán hàng, POS<span class="logo-title">247</span>
@@ -339,10 +339,10 @@
                 tích hoặc lưu trữ
               </div>
             </div>
-            <button>Đăng ký dùng thử</button>
+             <button onclick="goApp()">Đăng ký dùng thử</button>
           </div>
           <div class="image">
-            <img src="/images/atom_report.png" alt="Ảnh biểu đồ báo cáo" />
+            <img src="/images/goods.png" alt="Ảnh biểu đồ báo cáo" />
           </div>
         </div>
       </div>
@@ -418,14 +418,6 @@
               <div class="icon">
                 <i class="fa-solid fa-lightbulb-dollar"></i>
               </div>
-              <div class="line">
-                Kết nối Hóa đơn điện tử khởi tạo từ máy tính tiền
-              </div>
-            </div>
-            <div class="row">
-              <div class="icon">
-                <i class="fa-solid fa-lightbulb-dollar"></i>
-              </div>
               <div class="line">Quản lý Thu/Chi, phân tích kinh doanh</div>
             </div>
             <div class="row">
@@ -469,19 +461,7 @@
               <div class="icon">
                 <i class="fa-solid fa-lightbulb-dollar"></i>
               </div>
-              <div class="line">Quản lý Lô - Hạn sử dụng đa dạng hàng hóa</div>
-            </div>
-            <div class="row">
-              <div class="icon">
-                <i class="fa-solid fa-lightbulb-dollar"></i>
-              </div>
               <div class="line">Đa dạng hình thức thanh toán</div>
-            </div>
-            <div class="row">
-              <div class="icon">
-                <i class="fa-solid fa-lightbulb-dollar"></i>
-              </div>
-              <div class="line">Không giới hạn phân quyền</div>
             </div>
             <div class="row">
               <div class="icon">
@@ -491,14 +471,8 @@
                 Hệ thống thông tin khách hàng, nhà cung cấp, công nợ
               </div>
             </div>
-            <div class="row">
-              <div class="icon">
-                <i class="fa-solid fa-lightbulb-dollar"></i>
-              </div>
-              <div class="line">Hệ thống API mở, dễ dàng kết nối</div>
-            </div>
             <div class="btn-sub">
-              <button>Đăng ký dùng thử</button>
+               <button onclick="goApp()">Đăng ký dùng thử</button>
             </div>
           </div>
         </div>
@@ -637,9 +611,8 @@
         <div class="footer-column">
           <h4>Liên hệ</h4>
           <ul>
-            <li>📞 077 220 9215</li>
-            <li>📧 duyanh1762@gmail.com</li>
-            <li>📍 123 Đường ABC, Quận 1, TP.HCM</li>
+            <li>📞 077 828 8010</li>
+            <li>📧 hoai4285@gmail.com</li>
           </ul>
         </div>
       </div>
