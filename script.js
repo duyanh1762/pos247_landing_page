@@ -1,12 +1,12 @@
 const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.querySelector(".nav-menu");
+const navMenu = document.querySelector(".nav-menu-mobile");
 
-function goApp(){
-  window.open('https://fnb.pos247.app', '_blank');
+function goApp() {
+  window.open("https://fnb.pos247.app", "_blank");
 }
 
-function goTutorial(){
-  window.open('https://pos247.app/docs/index.html', '_blank');
+function goTutorial() {
+  window.open("https://pos247.app/docs/index.html", "_blank");
 }
 
 menuToggle.addEventListener("click", () => {
@@ -130,8 +130,10 @@ const popupPhone = document.getElementsByClassName("popup-phone")[0];
 window.addEventListener("scroll", () => {
   if (window.scrollY >= window.innerHeight) {
     navbar.classList.add("scrolled");
+    navMenu.classList.add("scrolled");
   } else {
     navbar.classList.remove("scrolled");
+    navMenu.classList.remove("scrolled");
   }
 
   if (window.scrollY >= 2 * window.innerHeight) {
@@ -140,16 +142,122 @@ window.addEventListener("scroll", () => {
   }
 });
 
-document.querySelectorAll(".nav-menu .smooth").forEach((link) => {
+document.querySelectorAll(".nav-menu-mobile .smooth").forEach((link) => {
   link.addEventListener("click", function (e) {
-    e.preventDefault(); // chặn hành vi mặc định nhảy ngay lập tức
-    const targetId = this.getAttribute("href").substring(1); // bỏ dấu #
+    e.preventDefault(); 
+    const targetId = this.getAttribute("href").substring(1); 
     const targetSection = document.getElementById(targetId);
     navMenu.classList.remove("show");
     if (targetSection) {
       targetSection.scrollIntoView({
-        behavior: "smooth", // cuộn mượt
+        behavior: "smooth", 
       });
     }
   });
 });
+
+function formatCurrencyVND(amount) {
+  return amount.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
+}
+
+fetch("https://pos247.app/plans", { method: "GET" })
+  .then((res) => {
+    return res.json();
+  })
+  .then((data) => {
+    data = data.filter((p) => {
+      return p.Schema === "outlet";
+    });
+    let contentHTML = "";
+    data.forEach((p) => {
+      if (p.Price === 1799000) {
+        p.Gift = "Tặng thêm 30 ngày sử dụng";
+        p.PerDay = Math.round(p.Price / 210);
+        contentHTML =
+          contentHTML +
+          ` <div class="pricing-card">
+                <h3>${p.Name}</h3>
+                <p class="price">${formatCurrencyVND(p.Price)}</p>
+                <p class="per-day">Chỉ ${formatCurrencyVND(p.PerDay)} / ngày</p>
+                <p class="discount"> Tiết kiệm 14%</p>
+                <ul>
+                <li class="sale">
+                    <i class="fa-solid fa-fire-flame"></i> Ưu đãi đặc biệt: ${
+                      p.Gift
+                    }
+                  </li>
+
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Trải
+                    nghiệm full chức năng
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i>${p.Description}
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Hỗ trợ kỹ thuật
+                    24/7 trong suốt quá trình sử dụng
+                  </li>
+                </ul>
+                <a href="#" class="btn" onclick="goApp()">Đăng ký</a>
+              </div>`;
+      } else if (p.Price === 3599000) {
+        p.Gift = "Tặng thêm 90 ngày sử dụng";
+        p.PerDay = Math.round(p.Price / 450);
+        contentHTML =
+          contentHTML +
+          ` <div class="pricing-card">
+                <h3>${p.Name}</h3>
+                <p class="price">${formatCurrencyVND(p.Price)}</p>
+                <p class="per-day">Chỉ ${formatCurrencyVND(p.PerDay)} / ngày</p>
+                <p class="discount">Tiết kiệm 20%</p>
+                <ul>
+                <li class="sale">
+                    <i class="fa-solid fa-fire-flame"></i> Ưu đãi đặc biệt: ${
+                      p.Gift
+                    }
+                  </li>
+
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Trải
+                    nghiệm full chức năng
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i>${p.Description}
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Hỗ trợ kỹ thuật
+                    24/7 trong suốt quá trình sử dụng
+                  </li>
+                </ul>
+                <a href="#" class="btn" onclick="goApp()">Đăng ký</a>
+              </div>`;
+      } else { 
+        p.PerDay = Math.round(p.Price / 30);
+        contentHTML =
+          contentHTML +
+          ` <div class="pricing-card">
+                <h3>${p.Name}</h3>
+                <p class="price">${formatCurrencyVND(p.Price)}</p>
+                <p class="per-day">Chỉ ${formatCurrencyVND(p.PerDay)} / ngày</p>
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Trải
+                    nghiệm full chức năng
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i>${p.Description}
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Hỗ trợ kỹ thuật
+                    24/7 trong suốt quá trình sử dụng
+                  </li>
+                </ul>
+                <a href="#" class="btn" onclick="goApp()">Đăng ký</a>
+              </div>`;
+      }
+    });
+
+    document.querySelector(".pricing-container").innerHTML =
+      document.querySelector(".pricing-container").innerHTML + contentHTML;
+  });

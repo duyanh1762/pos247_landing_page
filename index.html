@@ -26,16 +26,26 @@
         </div>
 
         <!-- Menu items -->
-        <nav class="nav-menu">
+        <div class="nav-menu">
           <a class="smooth" href="#introduce">Giới thiệu</a>
           <a class="smooth" href="#subscribe">Đăng ký</a>
           <a class="smooth" href="#function">Chức năng</a>
           <a href="https://pos247.app/docs/index.html" target="_blank">Hướng dẫn</a>
+          <a href="https://pos247.app/privacy" target="_blank">Chính sách</a>
+
           <a class="smooth" href="#contact">Hỗ trợ</a>
-        </nav>
+        </div>
         <!-- Icon menu (mobile) -->
         <div class="menu-toggle" id="menuToggle">☰</div>
       </div>
+    </div>
+    <div class="nav-menu-mobile">
+      <a class="smooth" href="#introduce">Giới thiệu</a>
+      <a class="smooth" href="#subscribe">Đăng ký</a>
+      <a class="smooth" href="#function">Chức năng</a>
+      <a href="https://pos247.app/docs/index.html" target="_blank">Hướng dẫn</a>
+      <a href="https://pos247.app/privacy" target="_blank">Chính sách</a>
+      <a class="smooth" href="#contact">Hỗ trợ</a>
     </div>
     <section class="hero">
       <canvas id="particle-bg"></canvas>
@@ -63,29 +73,14 @@
             <div class="line">Quản lý doanh số đơn giản,tiện lợi.</div>
           </div>
         </div>
-        <!-- <ul>
-          <li>
-            <i class="fa-solid fa-square-check"></i>
-            Sử dụng được trên mọi thiết bị
-          </li>
-          <li>
-            <i class="fa-solid fa-square-check"></i>
-            Giao diện thân thiện, dễ sử dụng.
-          </li>
-          <li>
-            <i class="fa-solid fa-square-check"></i>
-            Quản lý đơn hàng, doanh thu dễ dàng.
-          </li>
-          <li>
-            <i class="fa-solid fa-square-check"></i>
-            Ngăn chặn mọi thất thoát, gian lận.
-          </li>
-        </ul> -->
         <div class="btn-action">
           <button style="animation: swipeFromLeft 1s ease" onclick="goApp()">
             Dùng thử <i class="fa-solid fa-circle-caret-right"></i>
           </button>
-          <button style="animation: swipeFromRight 1s ease" onclick="goTutorial()">
+          <button
+            style="animation: swipeFromRight 1s ease"
+            onclick="goTutorial()"
+          >
             Hướng dẫn <i class="fa-solid fa-circle-caret-right"></i>
           </button>
         </div>
@@ -104,16 +99,13 @@
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="/images/staff6.jpg" alt="Ảnh 1" />
+                    <img src="/images/anh_9.png" alt="Ảnh 4" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="/images/staff2.jpg" alt="Ảnh 2" />
+                    <img src="/images/anh_11.png" alt="Ảnh 4" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="/images/staff4.jpg" alt="Ảnh 3" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/staff5.jpg" alt="Ảnh 4" />
+                    <img src="/images/anh_12.png" alt="Ảnh 4" />
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -135,16 +127,13 @@
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="/images/staff6.jpg" alt="Ảnh 1" />
+                  <img src="/images/anh_9.png" alt="Ảnh 4" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/images/staff2.jpg" alt="Ảnh 2" />
+                  <img src="/images/anh_11.png" alt="Ảnh 4" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/images/staff4.jpg" alt="Ảnh 3" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/images/staff5.jpg" alt="Ảnh 4" />
+                  <img src="/images/anh_12.png" alt="Ảnh 4" />
                 </div>
               </div>
               <div class="swiper-button-next"></div>
@@ -205,7 +194,7 @@
                 đầu
               </div>
             </div>
-             <button onclick="goApp()">Đăng ký dùng thử</button>
+            <button onclick="goApp()">Đăng ký dùng thử</button>
           </div>
         </div>
       </div>
@@ -248,7 +237,7 @@
                 CHÍNH XÁC
               </div>
             </div>
-             <button onclick="goApp()">Đăng ký dùng thử</button>
+            <button onclick="goApp()">Đăng ký dùng thử</button>
           </div>
           <div class="image">
             <img src="/images/workspaces.png" alt="Ảnh biểu đồ báo cáo" />
@@ -302,7 +291,7 @@
                 một nền tảng duy nhất
               </div>
             </div>
-             <button onclick="goApp()">Đăng ký dùng thử</button>
+            <button onclick="goApp()">Đăng ký dùng thử</button>
           </div>
         </div>
       </div>
@@ -339,7 +328,7 @@
                 tích hoặc lưu trữ
               </div>
             </div>
-             <button onclick="goApp()">Đăng ký dùng thử</button>
+            <button onclick="goApp()">Đăng ký dùng thử</button>
           </div>
           <div class="image">
             <img src="/images/goods.png" alt="Ảnh biểu đồ báo cáo" />
@@ -355,10 +344,6 @@
               <i class="fa-solid fa-rocket-launch"></i>
               Chức năng phần mềm
             </h2>
-            <!-- <div class="paragraph">
-              POS<span class="logo-title">247</span> cung cấp cho người dùng các
-              chức năng sau:
-            </div> -->
             <div class="row">
               <div class="icon">
                 <i class="fa-solid fa-lightbulb-dollar"></i>
@@ -472,7 +457,7 @@
               </div>
             </div>
             <div class="btn-sub">
-               <button onclick="goApp()">Đăng ký dùng thử</button>
+              <button onclick="goApp()">Đăng ký dùng thử</button>
             </div>
           </div>
         </div>
@@ -487,10 +472,10 @@
               <!-- Basic -->
               <div class="pricing-card">
                 <h3>Gói dùng thử</h3>
-                <p class="price">0đ</p>
+                <p class="price">0 ₫</p>
                 <ul>
                   <li>
-                    <i class="fa-regular fa-circle-check"></i> 2 tuần trải
+                    <i class="fa-regular fa-circle-check"></i> 15 ngày trải
                     nghiệm full chức năng
                   </li>
                   <li>
@@ -502,49 +487,7 @@
                     24/7 trong suốt quá trình dùng thử
                   </li>
                 </ul>
-                <a href="#" class="btn">Đăng ký</a>
-              </div>
-
-              <!-- Standard -->
-              <div class="pricing-card">
-                <h3>Gói 6 Tháng</h3>
-                <p class="price">399.000đ</p>
-                <ul>
-                  <li class="sale">
-                    <i class="fa-solid fa-fire-flame"></i> Ưu đãi đặc biệt: Tặng
-                    thêm 1 tháng sử dụng miễn phí
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Tổng thời gian sử
-                    dụng: 7 tháng
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Tiết kiệm ngay:
-                    ~14% so với thanh toán từng tháng
-                  </li>
-                </ul>
-                <a href="#" class="btn">Đăng ký</a>
-              </div>
-
-              <!-- Premium -->
-              <div class="pricing-card">
-                <h3>Gói 12 Tháng</h3>
-                <p class="price">999.000đ</p>
-                <ul>
-                  <li class="sale">
-                    <i class="fa-solid fa-fire-flame"></i> Ưu đãi đặc biệt: Tặng
-                    thêm 3 tháng sử dụng miễn phí
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Tổng thời gian sử
-                    dụng: 15 tháng
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-circle-check"></i> Tiết kiệm ngay:
-                    ~20% so với thanh toán từng tháng
-                  </li>
-                </ul>
-                <a href="#" class="btn">Đăng ký</a>
+                <a href="#" class="btn" onclick="goApp()">Đăng ký</a>
               </div>
             </div>
           </div>
@@ -623,7 +566,7 @@
     </footer>
     <div class="popup-zalo">
       <a href="https://zalo.me/0778288010" target="_blank" class="btn">
-        <img src="/images//zalo_icon.png" >
+        <img src="/images//zalo_icon.png" />
       </a>
     </div>
     <div class="popup-phone">
@@ -631,6 +574,5 @@
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="script.js">
-  </script>
+  <script src="script.js"></script>
 </html>
