@@ -2,7 +2,7 @@ const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.querySelector(".nav-menu-mobile");
 
 function goApp() {
-  window.open("https://fnb.pos247.app", "_blank");
+  window.open("https://web.pos247.app", "_blank");
 }
 
 function goTutorial() {
