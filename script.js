@@ -144,13 +144,27 @@ window.addEventListener("scroll", () => {
 
 document.querySelectorAll(".nav-menu-mobile .smooth").forEach((link) => {
   link.addEventListener("click", function (e) {
-    e.preventDefault(); 
-    const targetId = this.getAttribute("href").substring(1); 
+    e.preventDefault();
+    const targetId = this.getAttribute("href").substring(1);
     const targetSection = document.getElementById(targetId);
     navMenu.classList.remove("show");
     if (targetSection) {
       targetSection.scrollIntoView({
-        behavior: "smooth", 
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
+document.querySelectorAll(".nav-menu .smooth").forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetId);
+    navMenu.classList.remove("show");
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: "smooth",
       });
     }
   });
@@ -232,7 +246,7 @@ fetch("https://pos247.app/plans", { method: "GET" })
                 </ul>
                 <a href="#" class="btn" onclick="goApp()">Đăng ký</a>
               </div>`;
-      } else { 
+      } else {
         p.PerDay = Math.round(p.Price / 30);
         contentHTML =
           contentHTML +

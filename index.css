@@ -113,7 +113,12 @@ body {
   border-radius: 4px;
   background: transparent;
 }
-
+.image .video{
+  width: 100%;
+}
+.video iframe{
+  width: 100%;
+}
 .image img,
 .image-mobile img {
   width: 100%;
