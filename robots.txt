@@ -3,4 +3,3 @@ Allow: /
 Disallow: /docs/in-app/
 
 Sitemap: https://pos247.app/sitemap.xml
-Sitemap: https://pos247.app/docs/sitemap.xml
