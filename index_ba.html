@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>POS247 - Phần mềm quản lý bán hàng cho cửa hàng & nhà hàng</title>
+    <meta
+      name="description"
+      content="POS247 là phần mềm quản lý bán hàng giúp cửa hàng và nhà hàng vận hành hiệu quả, dễ dùng, tiết kiệm chi phí và quản lý mọi hoạt động trong một nơi duy nhất."
+    />
+    <meta
+      name="keywords"
+      content="POS247, pos, 247, misa, kioviet, 365, sapo, cukcuk, ipos, mpos, pos365, phần mềm bán hàng, quản lý nhà hàng, quản lý cửa hàng, phần mềm POS, Rova Solutions"
+    />
+    <meta name="author" content="Rova Solutions" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pos247.app/" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#fd7e14" />
+
+    <!-- Open Graph (Facebook, Zalo, Messenger, etc.) -->
+    <meta
+      property="og:title"
+      content="POS247 - Phần mềm quản lý bán hàng cho cửa hàng & nhà hàng"
+    />
+    <meta
+      property="og:description"
+      content="Giải pháp POS thông minh giúp quản lý cửa hàng, quán cà phê, nhà hàng một cách đơn giản và hiệu quả."
+    />
+    <meta
+      property="og:image"
+      content="https://pos247.app/images/favicon-32x32.png"
+    />
+    <meta property="og:url" content="https://pos247.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="POS247" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="POS247 - Phần mềm quản lý bán hàng" />
+    <meta
+      name="twitter:description"
+      content="Phần mềm POS247 giúp bạn quản lý cửa hàng, quán café, nhà hàng mọi lúc mọi nơi."
+    />
+    <meta
+      name="twitter:image"
+      content="https://pos247.app/images/favicon-32x32.png"
+    />
+
+    <!-- Structured Data: Website -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://pos247.app/",
+        "name": "POS247",
+        "description": "Phần mềm quản lý bán hàng POS cho cửa hàng cà phê và nhà hàng. Dễ dùng, nhanh chóng, quản lý mọi hoạt động.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Rova Solutions",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://pos247.app/images/favicon-32x32.png"
+          }
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://pos247.app/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Rova Solutions",
+        "url": "https://pos247.app/",
+        "logo": "https://pos247.app/images/favicon-32x32.png",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+84-772208015",
+            "contactType": "customer service",
+            "availableLanguage": ["Vietnamese", "English"]
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/pos247app",
+          "https://zalo.me/0772209215"
+        ]
+      }
+    </script>
+
+    <!-- Structured Data: Video -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Giới thiệu phần mềm POS247 - Quản lý bán hàng toàn diện",
+        "description": "POS247 giúp cửa hàng, quán cà phê, nhà hàng và chuỗi kinh doanh quản lý bán hàng, nhân viên, đối tác, kho hàng và dòng tiền một cách hiệu quả.",
+        "thumbnailUrl": "https://img.youtube.com/vi/g8l3Cpz28xE/hqdefault.jpg",
+        "uploadDate": "2025-11-06T00:00:00+07:00",
+        "duration": "PT2M47S",
+        "contentUrl": "https://pos247.app/",
+        "embedUrl": "https://www.youtube.com/embed/g8l3Cpz28xE",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Rova Solutions",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://pos247.app/images/favicon-32x32.png"
+          }
+        }
+      }
+    </script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="index_ba.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/assets/font-awesome/css/all.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="/images/favicon-32x32.png" alt="Logo" />
+          POS<span class="logo-title">247</span>
+        </div>
+
+        <!-- Menu items -->
+        <div class="nav-menu">
+          <a class="smooth" href="#introduce">Giới thiệu</a>
+          <a href="https://web.pos247.app/" target="_blank">Đăng nhập</a>
+          <a class="smooth" href="#subscribe">Đăng ký</a>
+          <a class="smooth" href="#function">Chức năng</a>
+          <a href="https://pos247.app/docs/home" target="_blank">Hướng dẫn</a>
+          <a href="https://pos247.app/privacy" target="_blank">Chính sách</a>
+
+          <a class="smooth" href="#contact">Hỗ trợ</a>
+        </div>
+        <!-- Icon menu (mobile) -->
+        <div class="menu-toggle" id="menuToggle">☰</div>
+      </div>
+    </div>
+    <div class="nav-menu-mobile">
+      <a class="smooth" href="#introduce">Giới thiệu</a>
+      <a href="https://web.pos247.app/" target="_blank">Đăng nhập</a>
+      <a class="smooth" href="#subscribe">Đăng ký</a>
+      <a class="smooth" href="#function">Chức năng</a>
+      <a href="https://pos247.app/docs/home" target="_blank">Hướng dẫn</a>
+      <a href="https://pos247.app/privacy" target="_blank">Chính sách</a>
+      <a class="smooth" href="#contact">Hỗ trợ</a>
+    </div>
+    <section class="hero">
+      <canvas id="particle-bg"></canvas>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>POS<span class="logo-title">247</span></h1>
+        <h3>
+          GIẢI PHÁP QUẢN LÝ CỬA HÀNG <span class="nowrap">TOÀN DIỆN</span>
+        </h3>
+        <div class="benefit">
+          <div class="row">
+            <div class="icon"><i class="fa-solid fa-square-check"></i></div>
+            <div class="line">Sử dụng được trên mọi thiết bị.</div>
+          </div>
+          <div class="row">
+            <div class="icon"><i class="fa-solid fa-square-check"></i></div>
+            <div class="line">Giao diện thân thiện,dễ sử dụng.</div>
+          </div>
+          <div class="row">
+            <div class="icon"><i class="fa-solid fa-square-check"></i></div>
+            <div class="line">Ngăn chặn mọi thất thoát,lãng phí.</div>
+          </div>
+          <div class="row">
+            <div class="icon"><i class="fa-solid fa-square-check"></i></div>
+            <div class="line">Quản lý doanh số đơn giản,tiện lợi.</div>
+          </div>
+        </div>
+        <div class="btn-action">
+          <button style="animation: swipeFromLeft 1s ease" onclick="goApp()">
+            Dùng thử <i class="fa-solid fa-circle-caret-right"></i>
+          </button>
+          <button
+            style="animation: swipeFromRight 1s ease"
+            onclick="goTutorial()"
+          >
+            Hướng dẫn <i class="fa-solid fa-circle-caret-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section features" id="introduce">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2>
+              <span style="color: grey">POS</span
+              ><span class="logo-title">247</span> - Giải pháp quản lý cửa hàng
+              hiện đại và <span class="nowrap">tiết kiệm</span>
+            </h2>
+            <div class="image-mobile">
+              <div class="video">
+                <iframe
+                  width="100%"
+                  height="200px"
+                  src="https://www.youtube.com/embed/g8l3Cpz28xE?si=hgc01mZjIVWN3xaT"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <!-- <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/images/anh_9.png" alt="Ảnh 4" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/anh_11.png" alt="Ảnh 4" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/anh_12.png" alt="Ảnh 4" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div> -->
+            </div>
+
+            <div class="paragraph">
+              Trong thời đại mà tốc độ, hiệu quả và chi phí là những yếu tố sống
+              còn, việc vận hành một <span class="nowrap">cửa hàng</span> không
+              chỉ cần sự chăm chỉ mà còn cần một công cụ thông minh để hỗ trợ.
+            </div>
+            <div class="paragraph">
+              POS<span class="logo-title">247</span> ra đời để giúp chủ quán như
+              bạn tiết kiệm thời gian, cắt giảm chi phí đầu tư, và quản lý cửa
+              hàng một cách dễ dàng, minh bạch và chuyên nghiệp.
+            </div>
+            <button onclick="goApp()">Đăng ký dùng thử</button>
+          </div>
+          <div class="image">
+            <!-- <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/images/anh_9.png" alt="Ảnh 4" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/anh_11.png" alt="Ảnh 4" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/anh_12.png" alt="Ảnh 4" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div> -->
+            <iframe
+              width="100%"
+              height="400px"
+              src="https://www.youtube.com/embed/g8l3Cpz28xE?si=hgc01mZjIVWN3xaT"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section features">
+      <div class="container">
+        <div class="content reverse">
+          <div class="image">
+            <img
+              src="/images/multidevices.png"
+              alt="Ảnh quản lý order đến chế biến"
+            />
+          </div>
+          <div class="text">
+            <h2>
+              <i class="fa-solid fa-clock-rotate-left"></i> Vận hành đơn giản –
+              Không cần hạ tầng phức tạp
+            </h2>
+            <div class="image-mobile">
+              <img
+                src="/images/multidevices.png"
+                alt="Ảnh quản lý order đến chế biến"
+              />
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Không còn cảnh phải lắp đặt mạng nội bộ rườm rà, đầu tư thiết bị
+                cồng kềnh hay thuê kỹ thuật viên set-up hệ thống.
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Tối đa hiệu năng sử dụng thiết bị sẵn có</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Tiết kiệm chi phí đầu tư ban đầu</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Tối thiểu thời gian đào tạo – ai cũng có thể sử dụng ngay từ lần
+                đầu
+              </div>
+            </div>
+            <button onclick="goApp()">Đăng ký dùng thử</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section analytics">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2>
+              <i class="fa-solid fa-tablet-screen-button"></i> Giao diện thân
+              thiện – Thiết kế tối giản – Dễ dùng
+            </h2>
+            <div class="image-mobile">
+              <img src="/images/workspaces.png" alt="Ảnh biểu đồ báo cáo" />
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Sơ đồ bàn trực quan giúp nhân viên thao tác nhanh chóng, theo
+                dõi trạng thái phục vụ từng bàn
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Tạo món chỉ với 1 chạm hoặc order bằng giọng nói – hệ thống tự
+                động gửi đơn đến bar/bếp
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Mọi thao tác đều được tối ưu hóa để đảm bảo: 👉 NHANH – GỌN –
+                CHÍNH XÁC
+              </div>
+            </div>
+            <button onclick="goApp()">Đăng ký dùng thử</button>
+          </div>
+          <div class="image">
+            <img src="/images/workspaces.png" alt="Ảnh biểu đồ báo cáo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section features">
+      <div class="container">
+        <div class="content reverse">
+          <div class="image">
+            <img
+              src="/images/activities.png"
+              alt="Ảnh quản lý order đến chế biến"
+            />
+          </div>
+          <div class="text">
+            <h2>
+              <i class="fa-solid fa-sack-dollar"></i> Quản lý dòng tiền minh
+              bạch – Chốt ca dễ dàng
+            </h2>
+            <div class="image-mobile">
+              <img
+                src="/images/activities.png"
+                alt="Ảnh quản lý order đến chế biến"
+              />
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Phân ca – chốt ca linh hoạt, lọc kênh thanh toán rõ ràng
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                So sánh doanh thu giữa các kỳ, phân tích tỷ lệ món bán chạy để
+                tối ưu menu
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Theo dõi tình trạng hoạt động, quản lý 1 hay nhiều cửa hàng từ
+                một nền tảng duy nhất
+              </div>
+            </div>
+            <button onclick="goApp()">Đăng ký dùng thử</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section analytics">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2>
+              <i class="fa-solid fa-box-open-full"></i> Quản lý hàng hoá chi
+              tiết – Báo cáo đầy đủ
+            </h2>
+            <div class="image-mobile">
+              <img src="/images/goods.png" alt="Ảnh biểu đồ báo cáo" />
+            </div>
+            <!-- <div class="paragraph">
+              Không chỉ quản lý bán hàng, POS<span class="logo-title">247</span>
+              còn giúp bạn kiểm soát hàng hoá một cách chính xác:
+            </div> -->
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Báo cáo xuất – nhập – tồn kho theo ngày, theo đối tác
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Hỗ trợ xuất báo cáo chi tiết ra Excel để phục vụ kiểm toán, phân
+                tích hoặc lưu trữ
+              </div>
+            </div>
+            <button onclick="goApp()">Đăng ký dùng thử</button>
+          </div>
+          <div class="image">
+            <img src="/images/goods.png" alt="Ảnh biểu đồ báo cáo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section analytics" id="function">
+      <div class="container">
+        <div class="content content-function">
+          <div class="text">
+            <h2>
+              <i class="fa-solid fa-rocket-launch"></i>
+              Chức năng phần mềm
+            </h2>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Tự động hóa quy trình bán hàng khép kín: Order - Chế biến -
+                Thanh toán
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Quản lý, bán hàng từ xa trên nhiều thiết bị
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Hệ thống báo cáo thông minh và toàn diện</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Dễ dàng thiết kế phòng bàn, quản lý danh sách hàng hóa
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Xây dựng chương trình khuyến mãi, voucher, tích điểm
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Tương thích, đồng bộ trên tất cả các thiết bị
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Quản lý sản xuất, định lượng nguyên vật liệu
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Quản lý Thu/Chi, phân tích kinh doanh</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Quy trình Order tại bàn tối ưu vận hành</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Quy trình xuất - nhập - tồn hàng hóa đơn giản, chính xác
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Hỗ trợ xuất báo cáo chi tiết ra Excel để phục vụ kiểm toán, phân
+                tích hoặc lưu trữ
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Không giới hạn tính năng, cập nhật liên tục
+              </div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Quản lý Nhân viên chặt chẽ</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">Đa dạng hình thức thanh toán</div>
+            </div>
+            <div class="row">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb-dollar"></i>
+              </div>
+              <div class="line">
+                Hệ thống thông tin khách hàng, nhà cung cấp, công nợ
+              </div>
+            </div>
+            <div class="btn-sub">
+              <button onclick="goApp()">Đăng ký dùng thử</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section pricing" id="subscribe">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2><i class="fa-solid fa-hand-holding-dollar"></i> Bảng Giá</h2>
+            <div class="pricing-container">
+              <!-- Basic -->
+              <div class="pricing-card">
+                <h3>Gói dùng thử</h3>
+                <p class="price">0 ₫</p>
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> 15 ngày trải
+                    nghiệm full chức năng
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Không ràng buộc,
+                    không phát sinh chi phí
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Hỗ trợ kỹ thuật
+                    24/7 trong suốt quá trình dùng thử
+                  </li>
+                </ul>
+                <a href="#" class="btn" onclick="goApp()">Đăng ký</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2><i class="fa-solid fa-headset"></i> Kênh hỗ trợ</h2>
+            <div class="contact-container">
+              <!-- Facebook -->
+              <div class="contact-card">
+                <i class="fa-brands fa-facebook fa-3x"></i>
+                <h3>Facebook</h3>
+                <p>Kết nối với chúng tôi qua Fanpage</p>
+                <a
+                  href="https://www.facebook.com/pos247app"
+                  target="_blank"
+                  class="btn"
+                  >Liên hệ</a
+                >
+              </div>
+
+              <!-- Zalo -->
+              <div class="contact-card">
+                <i class="fa-brands fa-whatsapp fa-3x"></i>
+                <!-- thay icon zalo tùy font -->
+                <h3>Zalo</h3>
+                <p>Chat trực tiếp qua Zalo</p>
+                <a href="https://zalo.me/0772209215" target="_blank" class="btn"
+                  >Liên hệ</a
+                >
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-card">
+                <i class="fa-solid fa-phone fa-3x"></i>
+                <h3>Hotline</h3>
+                <p>Gọi ngay để được hỗ trợ nhanh chóng</p>
+                <a href="tel:0396889667" class="btn">Gọi ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-column">
+          <div class="infor-company">
+            <img class="logo" src="/images/favicon-32x32.png" />
+            <h3>POS<span class="logo-title">247</span></h3>
+          </div>
+          <p>
+            Giải pháp toàn diện giúp bạn vận hành nhà hàng hiệu quả, tiết kiệm
+            chi phí và tăng doanh thu.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Liên hệ</h4>
+          <ul>
+            <li>📞 039 688 9667</li>
+            <li>📧 support@pos247.app</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 POS247. Đã đăng ký bản quyền.</p>
+      </div>
+    </footer>
+    <div class="popup-zalo">
+      <a href="https://zalo.me/0772209215" target="_blank" class="btn">
+        <img src="/images//zalo_icon.png" />
+      </a>
+    </div>
+    <div class="popup-phone">
+      <a href="tel:0396889667"><i class="fa-solid fa-phone-volume"></i></a>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</html>
