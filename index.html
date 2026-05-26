@@ -68,6 +68,64 @@
       }
     </script>
 
+    <!-- Structured Data: SiteLinks (WebPage cho từng mục chính) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Các tính năng chính của POS247",
+        "itemListElement": [
+          {
+            "@type": "SiteLinksSearchBox",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://pos247.app/search?q={search_term_string}"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Giới thiệu POS247",
+          "description": "Giải pháp quản lý cửa hàng hiện đại, tiết kiệm chi phí và dễ sử dụng.",
+          "url": "https://pos247.app/#introduce"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Chức năng phần mềm POS247",
+          "description": "Tự động hóa quy trình order, quản lý kho, báo cáo doanh thu và nhiều tính năng toàn diện khác.",
+          "url": "https://pos247.app/#function"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Bảng giá POS247 — Dùng thử miễn phí 15 ngày",
+          "description": "Bắt đầu miễn phí, không ràng buộc, nâng cấp bất cứ lúc nào.",
+          "url": "https://pos247.app/#subscribe"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Hỗ trợ & Liên hệ POS247",
+          "description": "Liên hệ qua Facebook, Zalo hoặc Hotline để được hỗ trợ nhanh chóng.",
+          "url": "https://pos247.app/#contact"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Hướng dẫn sử dụng POS247",
+          "description": "Tài liệu hướng dẫn chi tiết cách sử dụng phần mềm quản lý bán hàng POS247.",
+          "url": "https://pos247.app/docs/home"
+        }
+      ]
+    </script>
+
     <!-- Structured Data: Video -->
     <script type="application/ld+json">
       {
@@ -175,7 +233,7 @@
     </section>
 
     <!-- ══════════════ INTRODUCE ══════════════ -->
-    <section class="section features" id="introduce">
+    <section class="section features" id="introduce" aria-label="Giới thiệu POS247">
       <div class="container">
         <div class="content reveal">
           <div class="text">
@@ -254,7 +312,7 @@
         <div class="content reveal">
           <div class="text">
             <div class="section-label">Giao diện</div>
-            <h2><i class="fa-solid fa-tablet-screen-button"></i> Giao diện thân thiện - Thiết kế linh hoạ</h2>
+            <h2><i class="fa-solid fa-tablet-screen-button"></i> Giao diện thân thiện - Thiết kế linh hoạt</h2>
             <div class="image-mobile">
               <img src="/images/workspaces.png" alt="Workspace POS247" />
             </div>
@@ -342,7 +400,7 @@
     </section>
 
     <!-- ══════════════ FUNCTIONS ══════════════ -->
-    <section class="section analytics" id="function">
+    <section class="section analytics" id="function" aria-label="Chức năng phần mềm POS247">
       <div class="container">
         <div class="content content-function reveal">
           <!-- <div class="section-label" style="justify-content:center; margin:0 auto 0.75rem;">Tính năng</div> -->
@@ -375,7 +433,7 @@
     </section>
 
     <!-- ══════════════ PRICING ══════════════ -->
-    <section class="section pricing" id="subscribe">
+    <section class="section pricing" id="subscribe" aria-label="Bảng giá POS247 - Dùng thử miễn phí">
       <div class="container">
         <div class="reveal">
           <!-- <div class="section-label" style="justify-content:center; margin:0 auto 0.75rem;">Chi phí</div> -->
@@ -399,7 +457,7 @@
     </section>
 
     <!-- ══════════════ CONTACT ══════════════ -->
-    <section class="section contact" id="contact">
+    <section class="section contact" id="contact" aria-label="Hỗ trợ và liên hệ POS247">
       <div class="container">
         <div class="reveal">
           <!-- <div class="section-label" style="justify-content:center; margin:0 auto 0.75rem;">Liên hệ</div> -->
@@ -410,19 +468,19 @@
               <i class="fa-brands fa-facebook fa-2x"></i>
               <h3>Facebook</h3>
               <p>Kết nối với chúng tôi qua Fanpage</p>
-              <button><a href="https://www.facebook.com/pos247app" target="_blank" class="btn">Liên hệ</a></button>
+              <a href="https://www.facebook.com/pos247app" target="_blank" class="contact-btn">Liên hệ</a>
             </div>
             <div class="contact-card">
               <i class="fa-brands fa-whatsapp fa-2x"></i>
               <h3>Zalo</h3>
               <p>Chat trực tiếp qua Zalo</p>
-              <button><a href="https://zalo.me/0772209215" target="_blank" class="btn">Liên hệ</a></button>
+              <a href="https://zalo.me/0772209215" target="_blank" class="contact-btn">Liên hệ</a>
             </div>
             <div class="contact-card">
               <i class="fa-solid fa-phone fa-2x"></i>
               <h3>Hotline</h3>
               <p>Gọi ngay để được hỗ trợ nhanh chóng</p>
-              <button><a href="tel:0396889667" class="btn">Liên hệ</a></button>
+              <a href="tel:0396889667" class="contact-btn">Gọi ngay</a>
             </div>
           </div>
         </div>
@@ -430,7 +488,7 @@
     </section>
 
     <!-- ══════════════ FOOTER ══════════════ -->
-    <footer class="footer">
+ <footer class="footer">
       <div class="footer-content">
         <div class="footer-column">
           <div class="infor-company">
@@ -438,6 +496,16 @@
             <h3>POS<span class="logo-title">247</span></h3>
           </div>
           <p>Giải pháp toàn diện giúp bạn vận hành nhà hàng hiệu quả, tiết kiệm chi phí và tăng doanh thu.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Liên kết</h4>
+          <ul>
+            <li><a href="#introduce">Giới thiệu</a></li>
+            <li><a href="#function">Chức năng</a></li>
+            <li><a href="#subscribe">Bảng giá</a></li>
+            <li><a href="https://pos247.app/docs/home" target="_blank">Hướng dẫn sử dụng</a></li>
+            <li><a href="https://pos247.app/privacy" target="_blank">Chính sách bảo mật</a></li>
+          </ul>
         </div>
         <div class="footer-column">
           <h4>Liên hệ</h4>
